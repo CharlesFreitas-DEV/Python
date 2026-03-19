@@ -1,23 +1,12 @@
 <!-- ========================= -->
-<!-- 🔰 BADGES DO REPOSITÓRIO -->
+<!-- 🔰 BADGES (ESTILO 3D - PLASTIC) -->
 <!-- ========================= -->
 
-![Linguagem](https://img.shields.io/badge/Linguagem-Python-blue?style=for-the-badge&logo=python&logoColor=white)
+![Linguagem](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
 
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellowgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic)
 
-![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?style=for-the-badge&label=Commits)
-
-<!-- ========================= -->
-<!-- 🔰 VERSÃO COM LINKS (OPCIONAL) -->
-<!-- ========================= -->
-
-[![Linguagem](https://img.shields.io/badge/Linguagem-Python-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellowgreen?style=for-the-badge)](https://github.com/CharlesFreitas-DEV/Python)
-
-[![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?style=for-the-badge&label=Commits)](https://github.com/CharlesFreitas-DEV/Python/commits)
-
+![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
 
 ---
 
