@@ -1,33 +1,84 @@
-<hr/>
+<!-- ========================= -->
+<!-- 🔰 BADGES DO REPOSITÓRIO -->
+<!-- ========================= -->
 
-<p>Este repositório serve de suporte ao estudo da linguagem Python fornecendo diversos exemplos nas mais diversas aplicações.</p>
+![Linguagem](https://img.shields.io/badge/Linguagem-Python-blue?style=for-the-badge&logo=python&logoColor=white)
 
-<p>A depender do exemplo a ser estudado, algumas bibliotecas deverão ser instaladas. Para isso deverá ser utilizado o instalador de pacotes PIP. Vejamos como utilizá-lo.</p>
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellowgreen?style=for-the-badge)
 
-<hr/>
+![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?style=for-the-badge&label=Commits)
 
-<h3>PIP</h3>
+<!-- ========================= -->
+<!-- 🔰 VERSÃO COM LINKS (OPCIONAL) -->
+<!-- ========================= -->
 
-<p>Primeiro devemos verificar o PIP está instalado.</p>
+[![Linguagem](https://img.shields.io/badge/Linguagem-Python-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
-<pre><code>pip --version</code></pre>
+[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellowgreen?style=for-the-badge)](https://github.com/CharlesFreitas-DEV/Python)
 
-<p>Caso ele não esteja instalado,ele pode ser baixado e instalado a partir da URL a seguir:</p>
+[![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?style=for-the-badge&label=Commits)](https://github.com/CharlesFreitas-DEV/Python/commits)
 
-<pre><a target='_blank' href='https://pypi.org/project/pip/'>https://pypi.org/project/pip/</a></pre>
 
-<p>Caso ele já esteja instalado é sempre aconselhável atualizar a versão do PIP:</p>
+---
 
-<pre><code>python -m pip install --upgrade pip</code></pre>
+## 📘 Sobre o Repositório
 
-<p>Uma vez atualizado, utilizamos o comando PIP para instalar a biblioteca desejada:</p>
+Este repositório serve de suporte ao estudo da linguagem **Python**, fornecendo diversos exemplos nas mais variadas aplicações.
 
-<pre><code>pip install <i>nome_biblioteca</i></code></pre>
+Dependendo do exemplo a ser estudado, algumas bibliotecas precisarão ser instaladas. Para isso, utilizamos o gerenciador de pacotes **PIP**.
 
-Onde <i>nome_biblioteca</i> é o nome da biblioteca que se deseja instalar.
+---
 
-<p>Caso haja algum controle de permissão de usuário que impossibilite a instalação da biblioteca, devemos adicionar o argumento <i>--user</i>:</p>
+## 📦 PIP (Gerenciador de Pacotes)
 
-<pre><code>pip install <i>nome_biblioteca</i> --user</code></pre>
+### 🔍 Verificando se o PIP está instalado
 
-Em cada pasta serão descritas as bibliotecas usadas nos exemplos.
+```bash
+pip --version
+```
+
+---
+
+### ⬇️ Instalando o PIP
+
+Caso o PIP não esteja instalado, ele pode ser obtido em:
+
+👉 https://pypi.org/project/pip/
+
+---
+
+### 🔄 Atualizando o PIP
+
+É recomendável manter o PIP sempre atualizado:
+
+```bash
+python -m pip install --upgrade pip
+```
+
+---
+
+### 📥 Instalando bibliotecas
+
+Para instalar uma biblioteca, utilize:
+
+```bash
+pip install nome_biblioteca
+```
+
+---
+
+### 🔐 Instalação sem permissão de administrador
+
+Caso haja restrições de permissão, utilize a flag `--user`:
+
+```bash
+pip install nome_biblioteca --user
+```
+
+---
+
+## 📁 Organização do Repositório
+
+Em cada pasta do repositório, serão descritas as bibliotecas utilizadas nos respectivos exemplos.
+
+---
