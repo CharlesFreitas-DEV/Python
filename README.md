@@ -1,7 +1,5 @@
-# 🐍 Python - Exemplos e Estudos
-
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,50:2a5298,100:4b79a1&height=200&section=header&text=Python%20Examples&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,50:2a5298,100:4b79a1&height=200&section=header&text=🐍%20Python%20Exemplos%20e%20Estudos&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
 </p>
 
 <p align="center">
