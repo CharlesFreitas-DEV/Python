@@ -6,23 +6,72 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="120" alt="Python Logo"/>
 </p>
 
+---
+
 <!-- ========================= -->
 <!-- 🔰 BADGES (ESTILO 3D - PLASTIC) -->
 <!-- ========================= -->
 
-![Linguagem](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white) ![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic) ![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
+![Linguagem](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic)
+![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
 
 ---
 
-## 📘 Sobre o Repositório
+<!-- ========================= -->
+<!-- 🚀 OBJETIVO -->
+<!-- ========================= -->
 
-Este repositório serve de suporte ao estudo da linguagem **Python**, fornecendo diversos exemplos nas mais variadas aplicações.
+### 🚀 Objetivo deste Repositório
 
-Dependendo do exemplo a ser estudado, algumas bibliotecas precisarão ser instaladas. Para isso, utilizamos o gerenciador de pacotes **PIP**.
+Facilitar o aprendizado por meio de exemplos práticos, permitindo que o estudante explore diferentes cenários de uso da linguagem Python.
 
 ---
 
-## 📦 PIP (Gerenciador de Pacotes)
+<!-- ========================= -->
+<!-- 📚 CONTEÚDO -->
+<!-- ========================= -->
+
+## 📚 Conteúdo
+
+Este repositório reúne exemplos práticos da linguagem **Python**, organizados por temas e aplicações.
+
+### 🔹 Tópicos abordados
+
+- 🧠 Fundamentos da linguagem
+- 📊 Estruturas de dados
+- 🔁 Estruturas de repetição e controle
+- 🧩 Programação orientada a objetos
+- 📦 Uso de bibliotecas externas
+- 🌐 Integrações e automações
+- 🗃️ Manipulação de arquivos
+- 📈 Exemplos aplicados
+
+---
+
+### 📁 Organização
+
+Os exemplos estão organizados em diretórios específicos, onde cada pasta contém:
+
+- Código-fonte dos exemplos
+- Descrição das bibliotecas utilizadas (quando necessário)
+- Instruções complementares para execução
+
+Além disso, em cada pasta do repositório serão descritas as bibliotecas utilizadas nos respectivos exemplos.
+
+---
+
+<!-- ========================= -->
+<!-- 📦 BIBLIOTECAS EXTERNAS -->
+<!-- ========================= -->
+
+## 📦 Bibliotecas Externas
+
+Alguns exemplos deste repositório utilizam **bibliotecas externas** que não fazem parte da instalação padrão do Python.
+
+Para executar corretamente esses exemplos, será necessário instalar previamente as dependências utilizando o gerenciador de pacotes **PIP**.
+
+---
 
 ### 🔍 Verificando se o PIP está instalado
 
@@ -67,11 +116,5 @@ Caso haja restrições de permissão, utilize a flag `--user`:
 ```bash
 pip install nome_biblioteca --user
 ```
-
----
-
-## 📁 Organização do Repositório
-
-Em cada pasta do repositório, serão descritas as bibliotecas utilizadas nos respectivos exemplos.
 
 ---
