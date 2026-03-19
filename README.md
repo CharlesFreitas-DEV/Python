@@ -1,4 +1,8 @@
-# <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="30"/> Python - Exemplos e Estudos
+# 🐍 Python - Exemplos e Estudos
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="42"/>
+</p>
 
 ![Python](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic)
