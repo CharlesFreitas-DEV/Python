@@ -1,9 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,50:2a5298,100:4b79a1&height=200&section=header&text=🐍%20Python%20Exemplos%20e%20Estudos&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=🐍%20Python:%20Exemplos%20e%20Estudos&fontSize=30&fontColor=ffffff&animation=fadeIn" />
 </p>
 
 ![Python](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
