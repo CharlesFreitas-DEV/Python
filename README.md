@@ -1,12 +1,16 @@
 <!-- ========================= -->
+<!-- 🐍 LOGO / ÍCONE DO PYTHON -->
+<!-- ========================= -->
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="120" alt="Python Logo"/>
+</p>
+
+<!-- ========================= -->
 <!-- 🔰 BADGES (ESTILO 3D - PLASTIC) -->
 <!-- ========================= -->
 
-![Linguagem](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
-
-![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic)
-
-![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
+![Linguagem](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white) ![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic) ![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
 
 ---
 
