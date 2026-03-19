@@ -15,6 +15,7 @@
 ![Linguagem](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic)
 ![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
+![Última Atualização](https://img.shields.io/github/last-commit/CharlesFreitas-DEV/Python?label=ATUALIZAÇÃO&style=plastic)
 
 ---
 
