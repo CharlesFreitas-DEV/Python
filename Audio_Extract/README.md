@@ -303,6 +303,8 @@ Contribuições são bem-vindas:
 
 ## 📄 Licença
 
+Desenvolvido para fins educacionais em Python, com foco em automação de processamento de mídia usando FFmpeg.
+
 Este projeto está disponível sob a licença MIT.
 
 Você pode usar, modificar, distribuir e até comercializar este software, desde que mantenha os devidos créditos ao autor.
@@ -313,4 +315,4 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 
 ## 👨‍💻 Autor
 
-Desenvolvido para fins educacionais em Python, com foco em automação de processamento de mídia usando FFmpeg.
+**Autor:** Charles Cesar Magno de Freitas <freitascharles.dev@gmail.com>
