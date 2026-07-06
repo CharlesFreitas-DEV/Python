@@ -66,8 +66,7 @@ Python/
 ├── poo/
 │   ├── classes/
 │
-├── automacao/
-│   ├── scripts/
+├── exemplos/
 │
 ├── integracoes/
 │   ├── api/

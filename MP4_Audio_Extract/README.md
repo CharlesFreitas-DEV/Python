@@ -54,7 +54,6 @@ O objetivo é fornecer uma solução simples, portátil e eficiente para extraç
 Audio_Extract/
 │
 ├── extract_mp3_from_mp4.py
-├── NOME_ARQUIVO.MP4
 └── README.md
 ```
 

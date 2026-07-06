@@ -25,9 +25,14 @@ def extrairAudio(strArquivoVideo: str) -> str:
 
 # --------------------------------------------------------------------------------
 # Bloco principal do programa
-def main():
+def main() -> None:
+    # Obtendo o diretório do vídeo (considerando que o vídeo está 
+    # no mesmo diretório do programa 
     strDiretorioVideo = os.path.dirname(os.path.abspath(__file__))
-    strArquivoVideo   = os.path.join(strDiretorioVideo, "depoimento_thayna.mp4")
+
+    # Informando o arquivo MP4. Substituir "seu_video.mp4" pelo nome do arquivo4
+    # a ter o áudio extraído
+    strArquivoVideo   = os.path.join(strDiretorioVideo, "seu_video.mp4")
 
     print(f"\nExtraindo áudio do arquivo:\n{strArquivoVideo}")
     
