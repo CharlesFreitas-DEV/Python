@@ -4,6 +4,7 @@
 ![FFmpeg](https://img.shields.io/badge/ffmpeg-required-red)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen)
 
 ---
 
@@ -302,7 +303,11 @@ Contribuições são bem-vindas:
 
 ## 📄 Licença
 
-Projeto educacional, livre para uso e modificação.
+Este projeto está disponível sob a licença MIT.
+
+Você pode usar, modificar, distribuir e até comercializar este software, desde que mantenha os devidos créditos ao autor.
+
+Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
 
