@@ -5,7 +5,8 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen)
-
+![First Commit](https://img.shields.io/github/created-at/charlesfreitas-dev/Audio_Extract)
+![Last Commit](https://img.shields.io/github/last-commit/charlesfreitas-dev/Audio_Extract)
 ---
 
 ## 📌 Índice
@@ -315,4 +316,5 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 
 ## 👨‍💻 Autor
 
-**Autor:** Charles Cesar Magno de Freitas <freitascharles.dev@gmail.com>
+Charles Cesar Magno de Freitas 
+**Contato:** <freitascharles.dev@gmail.com>
