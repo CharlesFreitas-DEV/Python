@@ -5,8 +5,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen)
-![First Commit](https://img.shields.io/github/created-at/charlesfreitas-dev/Audio_Extract)
-![Last Commit](https://img.shields.io/github/last-commit/charlesfreitas-dev/Audio_Extract)
+
 ---
 
 ## 📌 Índice
@@ -304,11 +303,9 @@ Contribuições são bem-vindas:
 
 ## 📄 Licença
 
-Desenvolvido para fins educacionais em Python, com foco em automação de processamento de mídia usando FFmpeg.
+Repositório desenvolvido para fins educacionais em Python, com foco em automação de processamento de mídia usando FFmpeg.
 
-Este projeto está disponível sob a licença MIT.
-
-Você pode usar, modificar, distribuir e até comercializar este software, desde que mantenha os devidos créditos ao autor.
+Este projeto está licenciado sob a licença MIT.
 
 Consulte o arquivo `LICENSE` para mais detalhes.
 
@@ -318,3 +315,5 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 
 Charles Cesar Magno de Freitas 
 **Contato:** <freitascharles.dev@gmail.com>
+
+---

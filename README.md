@@ -7,7 +7,8 @@
 ![Python](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic)
 ![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
-![Última Atualização](https://img.shields.io/github/last-commit/CharlesFreitas-DEV/Python?label=ATUALIZAÇÃO&style=plastic)
+![Primeiro Commit](https://img.shields.io/github/created-at/CharlesFreitas-DEV/Python)
+![Último Commit](https://img.shields.io/github/last-commit/CharlesFreitas-DEV/Python)
 ![Licença](https://img.shields.io/github/license/CharlesFreitas-DEV/Python?label=LICEN%C3%87A&style=plastic)
 
 ---
@@ -194,13 +195,17 @@ Contribuições são bem-vindas!
 
 ## 📄 Licença
 
+Repositório desenvolvido para fins educacionais em Python, com foco em automação de processamento de mídia usando FFmpeg.
+
 Este projeto está licenciado sob a licença MIT.
+
+Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
 
 ## 👨‍💻 Autor
 
-**Charles Freitas**  
-GitHub: https://github.com/CharlesFreitas-DEV  
+Charles Cesar Magno de Freitas 
+**Contato:** <freitascharles.dev@gmail.com>
 
 ---
