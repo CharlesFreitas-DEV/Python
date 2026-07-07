@@ -180,6 +180,10 @@ else:
     # Fechando o arquivo
     fileInput.close()
 
+    # Imprimindo o nome do arquivo lido
+    print("\n\nArquivo Lido\n" + "-" * 30)
+    print(strNomeArquivo)
+
     # Imprimindo os dados do cabeçalho EXIF
     print("\n\nDados do Cabeçalho EXIF\n" + "-" * 30)
     for key, value in dictEXIF.items(): print(f"{key:15}: {value}")

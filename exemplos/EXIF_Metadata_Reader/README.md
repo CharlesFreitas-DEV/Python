@@ -107,6 +107,11 @@ python read_metadata_jpg.py
 ## 🧪 Exemplo de saída
 
 ```text
+Arquivo Lido
+------------------------------
+...\Python\exemplos\EXIF_Metadata_Reader\images\presepio_natalino.jpg
+
+
 Dados do Cabeçalho EXIF
 ------------------------------
 exifSize       : 11687
