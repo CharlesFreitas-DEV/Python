@@ -1,3 +1,0 @@
-## Integrações com API´s
-
----
