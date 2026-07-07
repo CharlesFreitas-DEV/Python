@@ -312,7 +312,8 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 
 ## 👨‍💻 Autor
 
-Charles Cesar Magno de Freitas 
+**Charles Cesar Magno de Freitas**
+
 **Contato:** <freitascharles.dev@gmail.com>
 
 ---
