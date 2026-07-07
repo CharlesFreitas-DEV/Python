@@ -55,11 +55,13 @@ Exemplo de organização:
 ```text
 Python/
 │
-├── estrutura_dados/
+├── exemplos/
+│
+├── fundamentos_estrutura_dados/
 │   ├── lineares/
 │   └── nao_lineares/
 │
-├── fundamentos/
+├── fundamentos_linguagem/
 │   ├── arquivos/
 │   ├── dicionarios/
 │   ├── estruturas_condicionais/
@@ -69,8 +71,6 @@ Python/
 │   ├── sets/
 │   ├── tuplas/
 │   └── variaveis/
-│
-├── exemplos/
 │
 └── README.md
 ```
