@@ -302,7 +302,14 @@ Contribuições são bem-vindas:
 
 ## 📄 Licença
 
-Repositório desenvolvido para fins educacionais em Python, com foco em automação de processamento de mídia usando FFmpeg.
+Repositório desenvolvido para fins educacionais em Python, com foco no estudo de:
+
+- Manipulação de arquivos e diretórios;
+- Automação de tarefas utilizando Python;
+- Integração entre aplicações Python e ferramentas externas;
+- Processamento de áudio e vídeo;
+- Execução de comandos externos utilizando subprocess;
+- Tratamento de exceções e organização de projetos.
 
 Este projeto está licenciado sob a licença MIT.
 

@@ -328,7 +328,17 @@ Contribuições são bem-vindas.
 
 ## 📄 Licença
 
-Repositório desenvolvido para fins educacionais em Python, com foco no estudo da estrutura interna de arquivos JPEG e da interpretação manual de metadados EXIF.
+Repositório desenvolvido para fins educacionais em Python, com foco no estudo de:
+
+- Manipulação de arquivos binários;
+- Estrutura interna de arquivos JPEG;
+- Padrão de metadados EXIF;
+- Cabeçalho TIFF e organização de dados;
+- Leitura e interpretação de bytes;
+- Offset e ponteiros em estruturas binárias;
+- Ordenação de bytes (Little Endian e Big Endian);
+- Geolocalização através de metadados GPS;
+- Análise de informações digitais para aplicações em perícia computacional.
 
 Este projeto está licenciado sob a licença MIT.
 
