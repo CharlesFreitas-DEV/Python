@@ -1,9 +1,10 @@
-# 🖼️ EXIF Metadata Reader
+# 🧩 Sudoku Solve
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![EXIF](https://img.shields.io/badge/metadata-EXIF-orange)
-![Format](https://img.shields.io/badge/format-JPEG-green)
+![Algorithm](https://img.shields.io/badge/algorithm-Backtracking-orange)
+![Format](https://img.shields.io/badge/input%2Foutput-CSV-green)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
+![Architecture](https://img.shields.io/badge/architecture-modular-purple)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen)
 
@@ -17,7 +18,7 @@
 - [⚙️ Requisitos](#️-requisitos)
 - [🚀 Como executar](#-como-executar)
 - [🔄 Fluxo de execução](#-fluxo-de-execução)
-- [🧪 Exemplo de saída](#-exemplo-de-saída)
+- [🧪 Exemplo de entrada e saída](#-exemplo-de-entrada-e-saída)
 - [🧠 Explicação técnica](#-explicação-técnica)
 - [❓ FAQ](#-faq)
 - [🚧 Melhorias futuras](#-melhorias-futuras)
@@ -29,43 +30,67 @@
 
 ## 📖 Sobre o projeto
 
-O **EXIF Metadata Reader** é um exemplo desenvolvido em Python que demonstra como realizar a leitura manual dos metadados **EXIF** armazenados em arquivos **JPEG**, sem utilizar bibliotecas especializadas como Pillow, ExifRead ou similares.
+O **Sudoku Solve** é um projeto desenvolvido em Python que implementa um solucionador automático de Sudoku utilizando o algoritmo de **Backtracking**.
 
-Todo o processamento é realizado diretamente sobre os bytes do arquivo, permitindo compreender como o padrão EXIF está organizado internamente e como interpretar sua estrutura utilizando apenas recursos da biblioteca padrão do Python.
+O programa recebe um tabuleiro Sudoku no formato CSV, realiza todas as validações necessárias, aplica o algoritmo de busca recursiva para encontrar uma solução válida e gera um novo arquivo contendo o Sudoku resolvido.
 
-Este projeto possui finalidade **didática**, sendo indicado para o estudo de manipulação de arquivos binários, formatos de imagem, programação de baixo nível e perícia computacional.
+O projeto possui finalidade **didática**, sendo indicado para o estudo de:
+
+- Estruturas de dados matriciais;
+- Recursividade;
+- Algoritmos de busca;
+- Backtracking;
+- Modularização em Python;
+- Manipulação de arquivos CSV;
+- Organização de projetos Python.
+
+A implementação foi estruturada utilizando separação de responsabilidades, dividindo a aplicação em módulos independentes:
+
+- Resolução do Sudoku;
+- Manipulação de arquivos;
+- Validação de dados;
+- Exibição dos resultados.
 
 ---
 
 ## ✨ Funcionalidades
 
-- Leitura de arquivos JPEG em modo binário
-- Validação da assinatura do arquivo JPEG
-- Verificação da existência do bloco EXIF
-- Leitura do cabeçalho TIFF
-- Identificação automática de Little Endian e Big Endian
-- Leitura da IFD Principal (Image File Directory)
-- Interpretação dos formatos de dados EXIF
-- Leitura de valores ASCII
-- Leitura de valores do tipo RATIONAL
-- Leitura do diretório GPS
-- Conversão de coordenadas GPS para Graus Decimais
-- Exibição organizada dos metadados encontrados
-- Utilização exclusiva da biblioteca padrão do Python
+- Leitura de Sudoku através de arquivo CSV
+- Utilização do caractere `;` como separador de valores
+- Validação da estrutura da matriz recebida
+- Validação dos valores presentes no tabuleiro
+- Resolução automática utilizando Backtracking
+- Verificação de:
+  - Linhas
+  - Colunas
+  - Blocos 3x3
+- Exibição formatada do Sudoku resolvido
+- Exportação do resultado para arquivo CSV
+- Tratamento de exceções durante leitura e gravação
+- Código organizado em módulos reutilizáveis
+- Utilização de tipagem nas funções Python
 
 ---
 
 ## 📂 Estrutura do projeto
 
 ```text
-JPEG_EXIF_Metadata_Reader/
+Sudoku_Solve/
 │
-├── images/
-│   └── presepio_natalino.jpg
+├── sudoku_input.csv
+├── sudoku_output.csv
 │
-├── metadata_contants.py
-├── metadata_functions.py
-├── read_metadata_jpg.py
+├── sudoku_solve.py
+│
+├── sudoku_library/
+│   │
+│   ├── __init__.py
+│   ├── sudoku_constants.py
+│   ├── validation_functions.py
+│   ├── file_functions.py
+│   ├── display_functions.py
+│   └── sudoku_functions.py
+│
 └── README.md
 ```
 
@@ -75,243 +100,326 @@ JPEG_EXIF_Metadata_Reader/
 
 - Python 3.10 ou superior
 
-O projeto **não requer instalação de bibliotecas externas**.
+O projeto não requer instalação de bibliotecas externas.
+
+São utilizadas apenas bibliotecas nativas do Python:
+
+```python
+from pathlib import Path
+```
 
 ---
 
 ## 🚀 Como executar
 
-Coloque uma imagem JPEG na pasta indicada pelo programa e execute:
+O arquivo de entrada deve estar no mesmo diretório do programa principal.
+
+Execute:
 
 ```bash
-python read_metadata_jpg.py
+python sudoku_solve.py
+```
+
+O programa realizará:
+
+1. Leitura do arquivo:
+
+```text
+sudoku_input.csv
+```
+
+2. Resolução do Sudoku.
+
+3. Geração do arquivo:
+
+```text
+sudoku_solve.csv
 ```
 
 ---
 
 ## 🔄 Fluxo de execução
 
-1. Abre o arquivo JPEG em modo binário.
-2. Verifica a assinatura do arquivo.
-3. Localiza o bloco EXIF.
-4. Lê o cabeçalho TIFF.
-5. Identifica a ordem dos bytes (Endian).
-6. Lê a IFD Principal.
-7. Interpreta os metadados encontrados.
-8. Localiza a IFD de GPS, caso exista.
-9. Converte coordenadas GPS para Graus Decimais.
-10. Exibe todas as informações obtidas.
+1. O programa principal inicia a aplicação.
+2. O arquivo CSV de entrada é localizado.
+3. O tabuleiro Sudoku é carregado para uma matriz.
+4. São realizadas validações:
+   - Tipo dos dados;
+   - Quantidade de linhas;
+   - Quantidade de colunas;
+   - Valores permitidos.
+5. O algoritmo de Backtracking inicia a resolução.
+6. Cada posição vazia recebe uma tentativa de valor.
+7. Caso a escolha não leve a uma solução:
+   - O valor é removido;
+   - O algoritmo retorna ao estado anterior;
+   - Uma nova tentativa é realizada.
+8. Quando todas as posições são preenchidas:
+   - O Sudoku está resolvido.
+9. O resultado é exibido.
+10. O arquivo CSV de saída é gerado.
 
 ---
 
-## 🧪 Exemplo de saída
+## 🧪 Exemplo de entrada e saída
+
+### Arquivo de entrada
+
+`sudoku_input.csv`
 
 ```text
-Arquivo Lido
-------------------------------
-...\Python\exemplos\EXIF_Metadata_Reader\images\presepio_natalino.jpg
+2;0;3;0;1;6;8;0;4
+5;0;9;0;0;4;7;0;1
+0;4;0;0;0;2;0;6;0
+9;5;7;0;0;0;0;0;0
+8;0;0;0;0;0;0;0;3
+0;0;0;0;0;0;4;5;8
+0;8;0;2;0;0;0;3;0
+6;0;1;4;0;0;5;0;2
+7;0;2;6;5;0;1;0;9
+```
 
+---
 
-Dados do Cabeçalho EXIF
-------------------------------
-exifSize       : 11687
-exifMarker     : b'Exif'
-temp1          : b'\x00\x00'
-tiffHeader     : b'II'
-temp2          : b'*\x00'
-temp3          : b'\x08\x00\x00\x00'
-metaCount      : 13
+### Saída exibida
 
+```text
+Sudoku resolvido:
 
-Metadados Lidos
-------------------------------
-{'TAGNumber': 'ImageWidth', 'DataFormat': 'Unsigned Long', 'NumberComponents': 1, 'DataValue': 4080}
-{'TAGNumber': 'ImageLength', 'DataFormat': 'Unsigned Long', 'NumberComponents': 1, 'DataValue': 3072}
-{'TAGNumber': 'Make', 'DataFormat': 'ASCII String', 'NumberComponents': 7, 'DataValue': 'Xiaomi'}
-{'TAGNumber': 'YResolution', 'DataFormat': 'ASCII String', 'NumberComponents': 9, 'DataValue': 'M2102K1G'}
-{'TAGNumber': 'Orientation', 'DataFormat': 'Unsigned Short', 'NumberComponents': 1, 'DataValue': 1}
-{'TAGNumber': 'XResolution', 'DataFormat': 'Unsigned Rational', 'NumberComponents': 1, 'DataValue': 186}
-{'TAGNumber': 'Unknown Tag', 'DataFormat': 'Unsigned Rational', 'NumberComponents': 1, 'DataValue': 194}
-{'TAGNumber': 'ResolutionUnit', 'DataFormat': 'Unsigned Short', 'NumberComponents': 1, 'DataValue': 2}
-{'TAGNumber': 'Software', 'DataFormat': 'ASCII String', 'NumberComponents': 22, 'DataValue': 'HDR+ 1.0.414775603ndy'}
-{'TAGNumber': 'DateTime', 'DataFormat': 'ASCII String', 'NumberComponents': 20, 'DataValue': '2022:12:19 20:21:42'}
-{'TAGNumber': 'YCbCrPositioning', 'DataFormat': 'Unsigned Short', 'NumberComponents': 1, 'DataValue': 1}
-{'TAGNumber': 'ExifOffset', 'DataFormat': 'Unsigned Long', 'NumberComponents': 1, 'DataValue': 244}
-{'TAGNumber': 'GPSInfo', 'DataFormat': 'Unsigned Long', 'NumberComponents': 1, 'DataValue': 939}
+2 7 3 | 5 1 6 | 8 9 4
+5 6 9 | 3 8 4 | 7 2 1
+1 4 8 | 9 7 2 | 3 6 5
+---------------------
+9 5 7 | 8 4 3 | 2 1 6
+8 2 4 | 1 6 5 | 9 7 3
+3 1 6 | 7 2 9 | 4 5 8
+---------------------
+4 8 5 | 2 9 1 | 6 3 7
+6 9 1 | 4 3 7 | 5 8 2
+7 3 2 | 6 5 8 | 1 4 9
 
-
-Metadados de GPS Lidos
-------------------------------
-{'TAGNumber': 'Latitude', 'DataValue': -5.812361111111111}
-{'TAGNumber': 'Ref. Latitude', 'DataValue': 'Sul'}
-{'TAGNumber': 'Longitude', 'DataValue': -35.20316666666667}
-{'TAGNumber': 'Ref. Longitude', 'DataValue': 'Oeste'}
-{'TAGNumber': 'Altitude', 'DataValue': '41.20 metros'}
-{'TAGNumber': 'Data e Hora (UTC)', 'DataValue': '2022:12:19 23:21:00 UTC'}
+Arquivo gerado com sucesso: sudoku_output.csv
 ```
 
 ---
 
 ## 🧠 Explicação técnica
 
-### 📁 Bibliotecas utilizadas
+## 📁 Bibliotecas utilizadas
 
 ```python
-import os
-import sys
-```
-
-Além da biblioteca:
-
-```python
-from typing import List
+from pathlib import Path
 ```
 
 ---
 
-### 📂 `os`
+## 📂 `pathlib`
 
-Responsável pela manipulação de caminhos de arquivos.
+Responsável pelo gerenciamento dos caminhos dos arquivos.
 
-Principais funções utilizadas:
+Principais recursos utilizados:
 
-- `os.path.join()`
-- `os.path.dirname()`
-- `os.path.abspath()`
-
----
-
-### 🧠 `sys`
-
-Utilizado para encerramento controlado da aplicação.
-
-```python
-sys.exit("Mensagem de erro")
-```
+- Localização do diretório do projeto;
+- Construção dos caminhos dos arquivos CSV;
+- Manipulação independente do sistema operacional.
 
 ---
 
-### 📦 `typing`
+# 🧩 Algoritmo de Backtracking
 
-Utilizado para documentação dos tipos de dados.
+O solucionador utiliza uma estratégia de busca por tentativa e erro controlada.
 
-```python
-List
-```
+O funcionamento é baseado em quatro etapas:
 
----
+### 1. Escolha
 
-### 📸 Estrutura do EXIF
-
-O padrão EXIF utiliza a estrutura TIFF para armazenar seus metadados.
-
-O programa interpreta:
-
-- Cabeçalho TIFF
-- IFD Principal
-- Diretório GPS
-
-Cada entrada da IFD possui exatamente **12 bytes**, compostos por:
-
-| Campo | Bytes |
-|--------|------:|
-| TAG | 2 |
-| Tipo | 2 |
-| Número de Componentes | 4 |
-| Valor ou Offset | 4 |
+Uma posição vazia do tabuleiro é selecionada.
 
 ---
 
-### 🔄 Byte Order
+### 2. Tentativa
 
-O programa identifica automaticamente a ordem dos bytes utilizada pela imagem:
-
-- Little Endian (Intel)
-- Big Endian (Motorola)
-
-garantindo a correta interpretação dos valores armazenados.
-
----
-
-### 🧭 Coordenadas GPS
-
-As coordenadas geográficas armazenadas no EXIF encontram-se no formato:
+São testados valores de:
 
 ```text
-Graus
-Minutos
-Segundos
+1 até 9
 ```
-
-O programa converte automaticamente essas informações para:
-
-```text
-Graus Decimais
-```
-
-facilitando sua utilização em sistemas de mapas e geolocalização.
 
 ---
 
-### ⚠️ Tratamento de erros
+### 3. Verificação
 
-O programa realiza validações para:
+Cada valor é analisado considerando:
 
-- Arquivo inexistente
-- Arquivo que não seja JPEG
-- Arquivo sem metadados EXIF
-- Estrutura EXIF inválida
-- Offsets inválidos
-- Dados inconsistentes
+- Não existir repetição na linha;
+- Não existir repetição na coluna;
+- Não existir repetição no bloco 3x3.
+
+---
+
+### 4. Retrocesso (Backtracking)
+
+Caso a escolha realizada impossibilite a solução:
+
+- O valor é removido;
+- O algoritmo retorna ao estado anterior;
+- Uma nova possibilidade é testada.
+
+Esse processo continua até encontrar uma solução válida.
+
+---
+
+## 📦 Organização dos módulos
+
+### `sudoku_functions.py`
+
+Responsável pela lógica de resolução.
+
+Principais funções:
+
+```python
+resolveSudoku()
+```
+
+Executa o processo de resolução.
+
+```python
+_resolverSudokuBacktracking()
+```
+
+Implementa o algoritmo recursivo.
+
+---
+
+### `file_functions.py`
+
+Responsável pela manipulação dos arquivos.
+
+Funções:
+
+```python
+lerArquivoSudoku()
+```
+
+Realiza a leitura do CSV.
+
+```python
+salvarArquivoSudoku()
+```
+
+Grava o Sudoku resolvido.
+
+---
+
+### `validation_functions.py`
+
+Responsável pelas validações.
+
+Realiza:
+
+- Validação dos tipos dos parâmetros;
+- Validação da estrutura da matriz;
+- Validação dos valores permitidos.
+
+---
+
+### `display_functions.py`
+
+Responsável pela apresentação do resultado.
+
+Função principal:
+
+```python
+exibeTabuleiro()
+```
+
+---
+
+### `sudoku_constants.py`
+
+Centraliza todas as constantes utilizadas pelo projeto.
+
+Exemplos:
+
+```python
+TAMANHO_TABULEIRO = 9
+
+TAMANHO_BLOCO     = 3
+
+POSICAO_VAZIA     = 0
+```
 
 ---
 
 ## ❓ FAQ
 
-### ❓ Utiliza Pillow?
+### ❓ Qual algoritmo é utilizado?
+
+O projeto utiliza **Backtracking**, um algoritmo de busca recursiva que testa possibilidades e desfaz escolhas quando necessário.
+
+---
+
+### ❓ O Sudoku precisa possuir uma solução única?
 
 Não.
 
-Todo o processamento é realizado manualmente sobre os bytes do arquivo.
+O algoritmo encontra uma solução válida para o tabuleiro informado.
 
 ---
 
-### ❓ Funciona com qualquer arquivo JPEG?
-
-Funciona com imagens JPEG que possuam metadados EXIF.
-
----
-
-### ❓ Posso utilizar em disciplinas de Perícia Computacional?
+### ❓ Posso alterar o arquivo de entrada?
 
 Sim.
 
-O projeto foi desenvolvido justamente para demonstrar como interpretar metadados diretamente na estrutura binária do arquivo.
+Basta substituir o conteúdo do arquivo:
+
+```text
+sudoku_input.csv
+```
+
+mantendo o formato:
+
+```text
+valor;valor;valor;...
+```
 
 ---
 
-### ❓ O programa altera a imagem?
+### ❓ O projeto utiliza bibliotecas externas?
 
 Não.
 
-A leitura é realizada apenas em modo binário, sem modificar o arquivo original.
+Toda a implementação utiliza apenas recursos nativos do Python.
+
+---
+
+### ❓ Posso utilizar esse projeto em disciplinas de programação?
+
+Sim.
+
+O projeto foi desenvolvido com finalidade educacional, podendo ser utilizado para demonstrar:
+
+- Matrizes;
+- Funções;
+- Recursividade;
+- Backtracking;
+- Organização modular.
 
 ---
 
 ## 🚧 Melhorias futuras
 
-- Suporte à leitura de arquivos TIFF
-- Suporte à leitura de arquivos HEIC
-- Suporte à leitura de arquivos HEIF
-- Suporte ao padrão eXIf em arquivos PNG
-- Leitura de metadados XMP
-- Leitura de metadados IPTC
-- Exportação para JSON
-- Exportação para CSV
-- Interface gráfica
-- Escrita e edição de metadados EXIF
-- Leitura de Miniaturas (Thumbnail EXIF)
-- Interpretação de Maker Notes dos fabricantes
+- Implementação de heurísticas para otimização da busca;
+- Ordenação das posições vazias utilizando estratégia MRV (Minimum Remaining Values);
+- Contagem de quantidade de soluções possíveis;
+- Validação de Sudoku com solução única;
+- Suporte a diferentes tamanhos de Sudoku;
+- Interface gráfica;
+- Interface Web;
+- Exportação da solução para JSON;
+- Geração automática de Sudoku;
+- Implementação de outros algoritmos de resolução;
+- Testes automatizados utilizando `pytest`.
 
 ---
 
@@ -320,7 +428,12 @@ A leitura é realizada apenas em modo binário, sem modificar o arquivo original
 Contribuições são bem-vindas.
 
 1. Faça um Fork do projeto.
-2. Crie uma Branch (`feature/nova-funcionalidade`).
+2. Crie uma Branch:
+
+```bash
+git checkout -b feature/nova-funcionalidade
+```
+
 3. Faça seus Commits.
 4. Abra um Pull Request.
 
@@ -328,7 +441,13 @@ Contribuições são bem-vindas.
 
 ## 📄 Licença
 
-Repositório desenvolvido para fins educacionais em Python, com foco no estudo da estrutura interna de arquivos JPEG e da interpretação manual de metadados EXIF.
+Repositório desenvolvido para fins educacionais em Python, com foco no estudo de:
+
+- Algoritmos;
+- Estruturas de dados;
+- Recursividade;
+- Backtracking;
+- Organização de projetos.
 
 Este projeto está licenciado sob a licença MIT.
 
@@ -341,5 +460,3 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 **Charles Cesar Magno de Freitas**
 
 **Contato:** <freitascharles.dev@gmail.com>
-
----
