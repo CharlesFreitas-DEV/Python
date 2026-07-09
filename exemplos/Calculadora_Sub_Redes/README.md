@@ -343,7 +343,7 @@ Exemplo:
 
 ```json
 {
-    "data_hora": "2026-07-09T18:19:48.463760",
+    "data_hora": "2026-07-09T18:54:26.287769",
     "informacoes_rede": {
         "strEnderecoIP": "192.168.10.35",
         "intMascaraInicial": 24,
@@ -359,6 +359,26 @@ Exemplo:
             "strMascaraDecimal": "255.255.255.0",
             "strMascaraBinaria": "11111111.11111111.11111111.00000000",
             "intHostsValidos": 254
+        },
+        {
+            "intCIDR": 25,
+            "strEnderecoRede": "192.168.10.0",
+            "strPrimeiroHost": "192.168.10.1",
+            "strUltimoHost": "192.168.10.126",
+            "strBroadcast": "192.168.10.127",
+            "strMascaraDecimal": "255.255.255.128",
+            "strMascaraBinaria": "11111111.11111111.11111111.10000000",
+            "intHostsValidos": 126
+        },
+        {
+            "intCIDR": 26,
+            "strEnderecoRede": "192.168.10.0",
+            "strPrimeiroHost": "192.168.10.1",
+            "strUltimoHost": "192.168.10.62",
+            "strBroadcast": "192.168.10.63",
+            "strMascaraDecimal": "255.255.255.192",
+            "strMascaraBinaria": "11111111.11111111.11111111.11000000",
+            "intHostsValidos": 62
         }
     ]
 }
