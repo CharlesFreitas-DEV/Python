@@ -162,9 +162,7 @@ sudoku_solve.csv
 
 ## 🧪 Exemplo de entrada e saída
 
-### Arquivo de entrada
-
-`sudoku_input.csv`
+### Arquivo de entrada: sudoku_input.csv
 
 ```text
 2;0;3;0;1;6;8;0;4
@@ -177,8 +175,6 @@ sudoku_solve.csv
 6;0;1;4;0;0;5;0;2
 7;0;2;6;5;0;1;0;9
 ```
-
----
 
 ### Saída exibida
 
@@ -200,9 +196,7 @@ Sudoku resolvido:
 Arquivo gerado com sucesso: sudoku_output.csv
 ```
 
-### Arquivo de saída
-
-`sudoku_output.csv`
+### Arquivo de saída: sudoku_output.csv
 
 ```text
 2;7;3;5;1;6;8;9;4
