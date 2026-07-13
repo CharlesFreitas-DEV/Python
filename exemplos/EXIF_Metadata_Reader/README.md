@@ -58,15 +58,16 @@ Este projeto possui finalidade **didática**, sendo indicado para o estudo de ma
 ## 📂 Estrutura do projeto
 
 ```text
-JPEG_EXIF_Metadata_Reader/
+EXIF_Metadata_Reader/
 │
 ├── images/
 │   └── presepio_natalino.jpg
 │
-├── metadata_contants.py
-├── metadata_functions.py
-├── read_metadata_jpg.py
-└── README.md
+├── LICENSE
+├── metadataConstants.py
+├── metadataFunctions.py
+├── README.md
+└── readMetadataJPG.py
 ```
 
 ---

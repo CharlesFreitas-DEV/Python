@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from sudoku_library.sudoku_constants import (VALOR_MAXIMO, VALOR_MINIMO, ENCODING, SEPARADOR)
+from sudokuLibrary.sudokuConstants import (VALOR_MAXIMO, VALOR_MINIMO, ENCODING, SEPARADOR)
 
-from sudoku_library.validation_functions import (validarMatrizSudoku, validarTiposParametros, validarValoresSudoku)
+from sudokuLibrary.validationFunctions import (validarMatrizSudoku, validarTiposParametros, validarValoresSudoku)
 
 # ----------------------------------------------------------------------
 # Lê um arquivo CSV contendo um Sudoku.

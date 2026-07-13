@@ -51,9 +51,10 @@ O objetivo é fornecer uma solução simples, portátil e eficiente para extraç
 ## 📂 Estrutura do projeto
 
 ```text
-Audio_Extract/
+MP4_Audio_Extract/
 │
-├── extract_mp3_from_mp4.py
+├── extractMP3fromMP4.py
+├── LICENSE
 └── README.md
 ```
 

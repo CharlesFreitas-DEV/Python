@@ -1,8 +1,8 @@
 import sys
 
-from metadata_functions import *
+from metadataFunctions import *
 
-from metadata_contants import *
+from metadataConstants import *
 
 # ------------------------------------------------------------------------------------------
 # Nome do arquivo JPG a ser lido

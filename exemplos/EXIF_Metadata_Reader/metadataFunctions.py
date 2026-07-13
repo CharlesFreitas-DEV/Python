@@ -1,4 +1,4 @@
-from typing import BinaryIO, List
+from typing import List
 
 # ----------------------------------------------------------------------
 # Função para ler uma string ASCII a partir de um offset.

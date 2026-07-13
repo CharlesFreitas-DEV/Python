@@ -1,6 +1,6 @@
-from sudoku_library.sudoku_constants import (TAMANHO_BLOCO,TAMANHO_TABULEIRO)
+from sudokuLibrary.sudokuConstants import (TAMANHO_BLOCO,TAMANHO_TABULEIRO)
 
-from sudoku_library.validation_functions import (validarTiposParametros,validarMatrizSudoku)
+from sudokuLibrary.validationFunctions import (validarTiposParametros,validarMatrizSudoku)
 
 # ----------------------------------------------------------------------
 # Formata o tabuleiro do Sudoku.

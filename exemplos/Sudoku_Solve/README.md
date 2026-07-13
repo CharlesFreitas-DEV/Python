@@ -77,21 +77,20 @@ A implementação foi estruturada utilizando separação de responsabilidades, d
 ```text
 Sudoku_Solve/
 │
-├── sudoku_input.csv
-├── sudoku_output.csv
-│
-├── sudoku_solve.py
-│
-├── sudoku_library/
+├── sudokuLibrary/
 │   │
 │   ├── __init__.py
-│   ├── sudoku_constants.py
-│   ├── validation_functions.py
-│   ├── file_functions.py
-│   ├── display_functions.py
-│   └── sudoku_functions.py
-│
-└── README.md
+│   ├── displayFunctions.py
+│   ├── fileFunctions.py
+|   ├── sudokuConstants.py
+│   ├── sudokuFunctions.py
+│   └── validationFunctions.py
+|
+├── LICENSE
+├── README.md
+├── sudoku_input.csv
+├── sudoku_output.csv
+└── sudokuSolve.py
 ```
 
 ---

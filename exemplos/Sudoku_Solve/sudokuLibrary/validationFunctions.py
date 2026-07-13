@@ -1,4 +1,4 @@
-from sudoku_library.sudoku_constants import (TAMANHO_TABULEIRO)
+from sudokuLibrary.sudokuConstants import (TAMANHO_TABULEIRO)
 
 # ----------------------------------------------------------------------
 # Valida o tipo de um único parâmetro.

@@ -4,11 +4,11 @@
 # Funções internas dos módulos permanecem encapsuladas.
 
 
-from sudoku_library.sudoku_functions import (resolveSudoku)
+from sudokuLibrary.sudokuFunctions import (resolveSudoku)
 
-from sudoku_library.file_functions import (lerArquivoSudoku,salvarArquivoSudoku)
+from sudokuLibrary.fileFunctions import (lerArquivoSudoku,salvarArquivoSudoku)
 
-from sudoku_library.display_functions import (exibeTabuleiro)
+from sudokuLibrary.displayFunctions import (exibeTabuleiro)
 
 
 # ----------------------------------------------------------------------

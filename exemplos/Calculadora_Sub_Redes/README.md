@@ -126,14 +126,9 @@ A arquitetura foi construída seguindo os princípios:
 ```text
 Calculo_SubRede/
 │
-├── calculadoraSubRede.py
-│
-├── config.ini
-├── info_rede.ini
-│
 ├── resultados/
 │   └── subredes_YYYYMMDD_HHMMSS.json
-│
+|
 ├── src/
 │   │
 │   ├── __init__.py
@@ -144,9 +139,11 @@ Calculo_SubRede/
 │   ├── funcoesValidacao.py
 │   └── modelos.py
 │
-├── README.md
+├── calculadoraSubRede.py
+├── config.ini
+├── info_rede.ini
 ├── LICENSE
-└── requirements.txt
+└── README.md
 
 # ⚙️ Requisitos
 
@@ -177,8 +174,20 @@ Calculo_SubRede/
 ├── calculadoraSubRede.py
 ├── config.ini
 ├── info_rede.ini
+|
+├── src/
+│   │
+│   ├── __init__.py
+│   ├── configuracoes.py
+│   ├── excecoes.py
+│   ├── funcoeasArquivo.py
+│   ├── display_functions.py
+│   └── sudoku_functions.py
+|
+├── LICENSE
+│
+└── README.md
 
-└── src/
 ```
 
 Execute:

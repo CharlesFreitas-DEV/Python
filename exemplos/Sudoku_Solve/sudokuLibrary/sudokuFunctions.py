@@ -1,9 +1,9 @@
-from sudoku_library.sudoku_constants import (PRIMEIRA_COLUNA  , PRIMEIRA_LINHA,
+from sudokuLibrary.sudokuConstants import (PRIMEIRA_COLUNA  , PRIMEIRA_LINHA,
                                              PRIMEIRO_NUMERO  , ULTIMO_NUMERO ,
                                              POSICAO_VAZIA    , TAMANHO_BLOCO , 
                                              TAMANHO_TABULEIRO, ULTIMA_LINHA  )
 
-from sudoku_library.validation_functions import (validarMatrizSudoku, validarTiposParametros)
+from sudokuLibrary.validationFunctions import (validarMatrizSudoku, validarTiposParametros)
 
 # ----------------------------------------------------------------------
 # Resolve um Sudoku utilizando o algoritmo de Backtracking.
