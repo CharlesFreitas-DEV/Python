@@ -200,6 +200,22 @@ Sudoku resolvido:
 Arquivo gerado com sucesso: sudoku_output.csv
 ```
 
+### Arquivo de saída
+
+`sudoku_output.csv`
+
+```text
+2;7;3;5;1;6;8;9;4
+5;6;9;3;8;4;7;2;1
+1;4;8;9;7;2;3;6;5
+9;5;7;8;4;3;2;1;6
+8;2;4;1;6;5;9;7;3
+3;1;6;7;2;9;4;5;8
+4;8;5;2;9;1;6;3;7
+6;9;1;4;3;7;5;8;2
+7;3;2;6;5;8;1;4;9
+```
+
 ---
 
 ## 🧠 Explicação técnica
