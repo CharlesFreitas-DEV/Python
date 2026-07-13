@@ -1,67 +1,54 @@
-## Exemplos Diversos
+# 🐍 Exemplos em Python
+
+![Python](https://img.shields.io/badge/LINGUAGEM-PYTHON-informational?style=plastic&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-yellowgreen?style=plastic)
+![Commits](https://img.shields.io/github/commit-activity/w/CharlesFreitas-DEV/Python?label=COMMITS&style=plastic)
+![Last Commit](https://img.shields.io/github/last-commit/CharlesFreitas-DEV/Python?style=plastic)
+![License](https://img.shields.io/github/license/CharlesFreitas-DEV/Python?style=plastic)
 
 ---
 
-### 🌐 [Calculadora de Sub-redes IPv4](Calculadora_Sub_Redes/)
+# 📖 Sobre o Diretório
 
-A **Calculadora de Sub-redes IPv4** é um projeto desenvolvido em Python que implementa o cálculo automático de informações de redes IPv4 utilizando **operações bitwise**.
+Este diretório reúne diversos projetos desenvolvidos em **Python**, com foco no estudo de algoritmos, estruturas de dados, manipulação de arquivos, redes de computadores, processamento de imagens, multimídia e outros temas relacionados ao desenvolvimento de software.
 
-Exemplo desenvolvido com foco no estudo de:
-
-- Redes de computadores;
-- Endereçamento IPv4;
-- Subnetting;
-- Operações bitwise;
-- Algoritmos;
-- Estruturas de dados;
-- Programação modular;
-- Organização de projetos Python.
+Cada projeto possui documentação própria (`README.md`), contendo descrição, requisitos, instruções de instalação, exemplos de uso e detalhes de implementação.
 
 ---
 
-### 🖼️ [EXIF Metadata Reader](EXIF_Metadata_Reader/)
+# 📂 Exemplos Disponíveis
 
-O **EXIF Metadata Reader** é um exemplo desenvolvido em Python que demonstra como realizar a leitura manual dos metadados **EXIF** armazenados em arquivos **JPEG**, sem utilizar bibliotecas especializadas como Pillow, ExifRead ou similares.
+Atualmente, o diretório contém os seguintes projetos:
 
-Exemplo desenvolvido com foco no estudo de:
+| Projeto | Descrição |
+|----------|-----------|
+| 🌐 **Calculadora de Sub-redes** | Cálculo de sub-redes IPv4 utilizando operações binárias, sem a biblioteca `ipaddress`. |
+| 📷 **EXIF Metadata Reader** | Leitura e exibição de metadados EXIF de imagens JPEG. |
+| 🎵 **MP4 Audio Extract** | Extração de áudio MP3 a partir de arquivos de vídeo MP4 utilizando FFmpeg. |
+| 🧩 **Sudoku Solve** | Resolução automática de jogos Sudoku utilizando o algoritmo de Backtracking. |
 
-- Manipulação de arquivos binários;
-- Estrutura interna de arquivos JPEG;
-- Padrão de metadados EXIF;
-- Cabeçalho TIFF e organização de dados;
-- Leitura e interpretação de bytes;
-- Offset e ponteiros em estruturas binárias;
-- Ordenação de bytes (Little Endian e Big Endian);
-- Geolocalização através de metadados GPS;
-- Análise de informações digitais para aplicações em perícia computacional.
+Cada projeto possui documentação própria contendo requisitos, instalação, exemplos de uso e detalhes de implementação.
 
 ---
 
-### 🎵 [MP4 Audio Extract](MP4_Audio_Extract/)
+## 🚀 Como utilizar
 
-O **MP4 Audio Extract** é um utilitário em Python que automatiza a extração de áudio de arquivos de vídeo no formato **MP4**, convertendo-os para **MP3** com o auxílio do **FFmpeg**.
-
-Exemplo desenvolvido com foco no estudo de:
-
-- Manipulação de arquivos e diretórios;
-- Automação de tarefas utilizando Python;
-- Integração entre aplicações Python e ferramentas externas;
-- Processamento de áudio e vídeo;
-- Execução de comandos externos utilizando subprocess;
-- Tratamento de exceções e organização de projetos.
+Entre no diretório do projeto desejado e consulte o respectivo arquivo `README.md` para obter todas as instruções de instalação e utilização.
 
 ---
 
-### 🧩 [Sudoku Solve](Sudoku_Solve/)
+## 📄 Licença
 
-O **Sudoku Solve** é um projeto desenvolvido em Python que implementa um solucionador automático de Sudoku utilizando o algoritmo de **Backtracking**.
+Repositório desenvolvido para fins educacionais em Python.
 
-Exemplo desenvolvido com foco no estudo de:
+Este projeto está licenciado sob a licença MIT.
 
-- Algoritmos;
-- Estruturas de dados;
-- Recursividade;
-- Backtracking;
-- Organização de projetos.
+Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
+
+## 👨‍💻 Autor
+
+**Charles Cesar Magno de Freitas**
+
+**Contato:** <freitascharles.dev@gmail.com>
