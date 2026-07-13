@@ -2,7 +2,7 @@
 
 ---
 
-### 🌐 Calculadora de Sub-redes IPv4
+### 🌐 [Calculadora de Sub-redes IPv4](Calculadora_Sub_Redes/)
 
 A **Calculadora de Sub-redes IPv4** é um projeto desenvolvido em Python que implementa o cálculo automático de informações de redes IPv4 utilizando **operações bitwise**.
 
@@ -19,7 +19,7 @@ Exemplo desenvolvido com foco no estudo de:
 
 ---
 
-### 🖼️ EXIF Metadata Reader
+### 🖼️ [EXIF Metadata Reader](EXIF_Metadata_Reader/)
 
 O **EXIF Metadata Reader** é um exemplo desenvolvido em Python que demonstra como realizar a leitura manual dos metadados **EXIF** armazenados em arquivos **JPEG**, sem utilizar bibliotecas especializadas como Pillow, ExifRead ou similares.
 
@@ -37,7 +37,7 @@ Exemplo desenvolvido com foco no estudo de:
 
 ---
 
-### 🎵 MP4 Audio Extract
+### 🎵 [MP4 Audio Extract](MP4_Audio_Extract/)
 
 O **MP4 Audio Extract** é um utilitário em Python que automatiza a extração de áudio de arquivos de vídeo no formato **MP4**, convertendo-os para **MP3** com o auxílio do **FFmpeg**.
 
@@ -52,7 +52,7 @@ Exemplo desenvolvido com foco no estudo de:
 
 ---
 
-### 🧩 Sudoku Solve
+### 🧩 [Sudoku Solve](Sudoku_Solve/)
 
 O **Sudoku Solve** é um projeto desenvolvido em Python que implementa um solucionador automático de Sudoku utilizando o algoritmo de **Backtracking**.
 
