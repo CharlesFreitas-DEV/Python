@@ -450,13 +450,7 @@ git checkout -b feature/nova-funcionalidade
 
 ## 📄 Licença
 
-Repositório desenvolvido para fins educacionais em Python, com foco no estudo de:
-
-- Algoritmos;
-- Estruturas de dados;
-- Recursividade;
-- Backtracking;
-- Organização de projetos.
+Repositório desenvolvido para fins educacionais em Python.
 
 Este projeto está licenciado sob a licença MIT.
 

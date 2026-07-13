@@ -944,16 +944,7 @@ git push origin feature/nova-funcionalidade
 
 # 📄 Licença
 
-Repositório desenvolvido para fins educacionais em Python, com foco no estudo de:
-
-- Redes de computadores;
-- Endereçamento IPv4;
-- Subnetting;
-- Operações bitwise;
-- Algoritmos;
-- Estruturas de dados;
-- Programação modular;
-- Organização de projetos Python.
+Repositório desenvolvido para fins educacionais em Python.
 
 Este projeto está licenciado sob a licença MIT.
 
