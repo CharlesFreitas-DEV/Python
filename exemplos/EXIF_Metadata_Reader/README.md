@@ -85,7 +85,7 @@ O projeto **não requer instalação de bibliotecas externas**.
 Coloque uma imagem JPEG na pasta indicada pelo programa e execute:
 
 ```bash
-python read_metadata_jpg.py
+python readMetadataJPG.py
 ```
 
 ---

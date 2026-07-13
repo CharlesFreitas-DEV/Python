@@ -124,7 +124,7 @@ A arquitetura foi construída seguindo os princípios:
 # 📂 Estrutura do projeto
 
 ```text
-Calculo_SubRede/
+Calculadora_Sub_Redes/
 │
 ├── resultados/
 │   └── subredes_YYYYMMDD_HHMMSS.json
@@ -163,32 +163,6 @@ import json
 ---
 
 # 🚀 Como executar
-
-Os arquivos de configuração devem estar no diretório raiz do projeto.
-
-Estrutura esperada:
-
-```text
-Calculo_SubRede/
-
-├── calculadoraSubRede.py
-├── config.ini
-├── info_rede.ini
-|
-├── src/
-│   │
-│   ├── __init__.py
-│   ├── configuracoes.py
-│   ├── excecoes.py
-│   ├── funcoeasArquivo.py
-│   ├── display_functions.py
-│   └── sudoku_functions.py
-|
-├── LICENSE
-│
-└── README.md
-
-```
 
 Execute:
 

@@ -120,7 +120,7 @@ No terminal:
 2. Execute:
 
 ```bash
-python extract_mp3_from_mp4.py
+python extractMP3fromMP4.py
 ```
 
 ---

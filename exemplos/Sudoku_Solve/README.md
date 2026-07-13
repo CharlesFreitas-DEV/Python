@@ -116,7 +116,7 @@ O arquivo de entrada deve estar no mesmo diretório do programa principal.
 Execute:
 
 ```bash
-python sudoku_solve.py
+python sudokuSolve.py
 ```
 
 O programa realizará:
@@ -280,7 +280,7 @@ Esse processo continua até encontrar uma solução válida.
 
 ## 📦 Organização dos módulos
 
-### `sudoku_functions.py`
+### `sudokuFunctions.py`
 
 Responsável pela lógica de resolução.
 
@@ -300,7 +300,7 @@ Implementa o algoritmo recursivo.
 
 ---
 
-### `file_functions.py`
+### `fileFunctions.py`
 
 Responsável pela manipulação dos arquivos.
 
@@ -320,7 +320,7 @@ Grava o Sudoku resolvido.
 
 ---
 
-### `validation_functions.py`
+### `validationFunctions.py`
 
 Responsável pelas validações.
 
@@ -332,7 +332,7 @@ Realiza:
 
 ---
 
-### `display_functions.py`
+### `displayFunctions.py`
 
 Responsável pela apresentação do resultado.
 
@@ -344,7 +344,7 @@ exibeTabuleiro()
 
 ---
 
-### `sudoku_constants.py`
+### `sudokuConstants.py`
 
 Centraliza todas as constantes utilizadas pelo projeto.
 
