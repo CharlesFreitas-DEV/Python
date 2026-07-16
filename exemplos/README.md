@@ -12,17 +12,17 @@
 
 | Informação | Valor |
 |------------|-------|
-| 📂 Projetos disponíveis | **4** |
+| 📂 Projetos disponíveis | **5** |
 | 🐍 Linguagem principal | **Python 3.10+** |
 | 🎯 Objetivo | **Estudo e ensino de programação** |
-| 📚 Áreas abordadas | Redes de Computadores, Algoritmos, Estruturas de Dados, Processamento de Imagens, Multimídia e Automação |
+| 📚 Áreas abordadas | Redes de Computadores, Algoritmos, Estruturas de Dados, Robótica, Processamento de Imagens, Multimídia e Automação |
 | 📄 Licença | **MIT** |
 
 ---
 
 # 📖 Sobre o Repositório
 
-Este repositório reúne diversos projetos desenvolvidos em **Python**, criados com fins educacionais e voltados ao estudo de algoritmos, estruturas de dados, redes de computadores, processamento de imagens, multimídia, automação de tarefas e outras áreas da Computação.
+Este repositório reúne diversos projetos desenvolvidos em **Python**, criados com fins educacionais e voltados ao estudo de algoritmos, estruturas de dados, redes de computadores, robótica, processamento de imagens, multimídia, automação de tarefas e outras áreas da Computação.
 
 Cada projeto procura apresentar uma implementação completa, organizada em módulos, documentada e utilizando boas práticas de desenvolvimento de software.
 
@@ -37,8 +37,10 @@ Os projetos deste repositório abrangem diferentes áreas da Ciência da Computa
 | Área | Projetos |
 |------|-----------|
 | 🌐 **Redes de Computadores** | Calculadora de Sub-redes IPv4 |
-| 🧩 **Algoritmos** | Calculadora de Sub-redes IPv4 • Sudoku Solve |
+| 🧩 **Algoritmos** | Calculadora de Sub-redes IPv4 • Sudoku Solve • Robo_Cartesiano |
 | 🌳 **Estruturas de Dados** | Sudoku Solve |
+| 📐 **Geometria Computacional** | Robo_Cartesiano |
+| 🤖 **Robótica e Simulação** | Robo_Cartesiano |
 | 📷 **Processamento de Imagens** | EXIF Metadata Reader |
 | 🗂️ **Manipulação de Arquivos** | EXIF Metadata Reader • MP4 Audio Extract |
 | 🎵 **Multimídia** | MP4 Audio Extract |
@@ -54,6 +56,7 @@ Os projetos deste repositório abrangem diferentes áreas da Ciência da Computa
 | Projeto | Nível | Descrição | Focos de Estudo |
 |----------|:----:|-----------|-----------------|
 | 🌐 **[Calculadora de Sub-redes IPv4](Exemplos/Calculadora_Sub_Redes/)** | 🟡 Intermediário | Cálculo de sub-redes IPv4 utilizando operações binárias, sem o uso da biblioteca `ipaddress`. | • Redes de computadores;<br>• Endereçamento IPv4;<br>• Subnetting;<br>• Operações bitwise;<br>• Algoritmos;<br>• Estruturas de dados;<br>• Programação modular;<br>• Organização de projetos Python. |
+| 🤖 **[Robo_Cartesiano](Exemplos/Robo_Cartesiano/)** | 🟡 Intermediário | Simulação de um robô cartesiano em um plano bidimensional, permitindo movimentação através de comandos direcionais e controle de posição utilizando coordenadas X e Y. | • Algoritmos;<br>• Sistemas de coordenadas cartesianas;<br>• Geometria computacional;<br>• Manipulação de posições em planos 2D;<br>• Validação de entradas;<br>• Processamento de comandos;<br>• Programação modular;<br>• Organização de projetos Python. |
 | 📷 **[EXIF Metadata Reader](Exemplos/EXIF_Metadata_Reader/)** | 🔴 Avançado | Leitura e interpretação de metadados EXIF presentes em imagens JPEG. | • Manipulação de arquivos binários;<br>• Estrutura interna de arquivos JPEG;<br>• Padrão EXIF;<br>• Cabeçalho TIFF;<br>• Leitura e interpretação de bytes;<br>• Offsets e ponteiros;<br>• Little Endian e Big Endian;<br>• Metadados GPS;<br>• Perícia computacional. |
 | 🎵 **[MP4 Audio Extract](Exemplos/MP4_Audio_Extract/)** | 🟢 Básico | Extração de áudio MP3 a partir de vídeos MP4 utilizando FFmpeg. | • Manipulação de arquivos e diretórios;<br>• Automação de tarefas;<br>• Integração com ferramentas externas;<br>• Processamento de áudio e vídeo;<br>• `subprocess`;<br>• Tratamento de exceções;<br>• Organização de projetos. |
 | 🧩 **[Sudoku Solve](Exemplos/Sudoku_Solve/)** | 🟡 Intermediário | Resolução automática de jogos Sudoku utilizando o algoritmo de Backtracking. | • Algoritmos;<br>• Estruturas de dados;<br>• Recursividade;<br>• Backtracking;<br>• Organização de projetos. |
@@ -65,7 +68,7 @@ Os projetos deste repositório abrangem diferentes áreas da Ciência da Computa
 O repositório encontra-se em constante evolução. Entre os projetos planejados para futuras versões estão:
 
 | Área | Projeto |
-|------|----------|
+|------|---------|
 | 🌳 Estruturas de Dados | Árvores Binárias |
 | 🌳 Estruturas de Dados | Árvores AVL |
 | 🌳 Estruturas de Dados | Árvores Rubro-Negras |
@@ -98,8 +101,9 @@ Caso esteja iniciando os estudos em Python, recomenda-se a seguinte sequência:
 |:----:|----------|----------|
 | 🟢 **1** | **MP4 Audio Extract** | Organização de projetos, manipulação de arquivos e automação de tarefas. |
 | 🟡 **2** | **Calculadora de Sub-redes IPv4** | Algoritmos, modularização, operações bitwise e fundamentos de redes. |
-| 🟡 **3** | **Sudoku Solve** | Recursividade, estruturas de dados e Backtracking. |
-| 🔴 **4** | **EXIF Metadata Reader** | Manipulação de arquivos binários e interpretação da estrutura interna de imagens JPEG. |
+| 🟡 **3** | **Robo_Cartesiano** | Algoritmos, coordenadas cartesianas, validação de comandos e simulação de movimentos. |
+| 🟡 **4** | **Sudoku Solve** | Recursividade, estruturas de dados e Backtracking. |
+| 🔴 **5** | **EXIF Metadata Reader** | Manipulação de arquivos binários e interpretação da estrutura interna de imagens JPEG. |
 
 ---
 
@@ -155,12 +159,17 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
 **Charles Cesar Magno de Freitas**
 
-Professor • Analista de Sistemas • Desenvolvedor Python
+Professor • Analista de Sistemas • Desenvolvedor Back-end
 
-📧 **Contato:** <freitascharles.dev@gmail.com>
+- 🎓 Professor de Programação
+- 🐍 Entusiasta da linguagem Python
+- 🧩 Desenvolvedor de projetos educacionais
+- 💻 GitHub: https://github.com/CharlesFreitas-DEV
 
-🐙 **GitHub:** https://github.com/CharlesFreitas-DEV
+---
+
+⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório para apoiar o desenvolvimento e incentivar a criação de novos projetos educacionais.

@@ -7,19 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen)
 
-Simulador de movimentação de um robô em um plano cartesiano utilizando coordenadas **X** e **Y**.
 
-O projeto recebe uma configuração através de um arquivo `robo_input.ini`, interpreta uma sequência de comandos de movimentação e simula o deslocamento de um robô dentro de uma área delimitada.
-
-A aplicação foi desenvolvida em Python com foco educacional, explorando conceitos de:
-
-- Programação Orientada a Objetos;
-- Modelagem de domínio;
-- Organização modular;
-- Separação de responsabilidades;
-- Manipulação de arquivos;
-- Validação de dados;
-- Tratamento de exceções.
 
 ---
 

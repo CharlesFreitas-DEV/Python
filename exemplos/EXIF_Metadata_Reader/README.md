@@ -337,10 +337,17 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
 **Charles Cesar Magno de Freitas**
 
-**Contato:** <freitascharles.dev@gmail.com>
+Professor • Analista de Sistemas • Desenvolvedor Back-end
+
+- 🎓 Professor de Programação
+- 🐍 Entusiasta da linguagem Python
+- 🧩 Desenvolvedor de projetos educacionais
+- 💻 GitHub: https://github.com/CharlesFreitas-DEV
 
 ---
+
+⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório para apoiar o desenvolvimento e incentivar a criação de novos projetos educacionais.
