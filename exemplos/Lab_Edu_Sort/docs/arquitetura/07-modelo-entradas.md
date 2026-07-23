@@ -73,13 +73,13 @@ Esta seção apresenta os fundamentos arquiteturais do módulo `entradaDados` do
 O objetivo desta parte é estabelecer a base conceitual para o tratamento das entradas utilizadas pelos algoritmos de ordenação, definindo:
 </ul>
 
-<ul>
+<ul><ul>
 <li>responsabilidade do módulo;</li>
 <li>papel dentro da arquitetura geral;</li>
 <li>princípios de desenvolvimento;</li>
 <li>limites de atuação;</li>
 <li>integração com os demais componentes.</li>
-</ul>
+</ul></ul>
 
 <ul>
 O módulo de entrada representa a primeira etapa do fluxo de execução do sistema, sendo responsável por disponibilizar dados adequados para processamento pelos algoritmos de ordenação.
