@@ -74,11 +74,11 @@ O objetivo desta parte é estabelecer a base conceitual para o tratamento das en
 </ul>
 
 <ul>
-- responsabilidade do módulo;
-- papel dentro da arquitetura geral;
-- princípios de desenvolvimento;
-- limites de atuação;
-- integração com os demais componentes.
+<li>responsabilidade do módulo;</li>
+<li>papel dentro da arquitetura geral;</li>
+<li>princípios de desenvolvimento;</li>
+<li>limites de atuação;</li>
+<li>integração com os demais componentes.</li>
 </ul>
 
 <ul>
