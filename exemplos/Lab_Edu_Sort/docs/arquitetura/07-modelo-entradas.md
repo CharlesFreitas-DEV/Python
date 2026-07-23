@@ -66,17 +66,21 @@
 # Parte I — Fundamentos do Modelo de Entradas
 
 <ul>
-        Esta seção apresenta os fundamentos arquiteturais do módulo `entradaDados` do **LAB EDU SORT V1.0**.
+Esta seção apresenta os fundamentos arquiteturais do módulo `entradaDados` do **LAB EDU SORT V1.0**.
+</ul>
 
-        O objetivo desta parte é estabelecer a base conceitual para o tratamento das entradas utilizadas pelos algoritmos de ordenação, definindo:
+<ul>
+O objetivo desta parte é estabelecer a base conceitual para o tratamento das entradas utilizadas pelos algoritmos de ordenação, definindo:
+</ul>
 
-        - responsabilidade do módulo;
-        - papel dentro da arquitetura geral;
-        - princípios de desenvolvimento;
-        - limites de atuação;
-        - integração com os demais componentes.
+- responsabilidade do módulo;
+- papel dentro da arquitetura geral;
+- princípios de desenvolvimento;
+- limites de atuação;
+- integração com os demais componentes.
 
-        O módulo de entrada representa a primeira etapa do fluxo de execução do sistema, sendo responsável por disponibilizar dados adequados para processamento pelos algoritmos de ordenação.
+<ul>
+O módulo de entrada representa a primeira etapa do fluxo de execução do sistema, sendo responsável por disponibilizar dados adequados para processamento pelos algoritmos de ordenação.
 </ul>
 ---
 
