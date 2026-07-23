@@ -1,94 +1,20 @@
-# Índice
-
-- [Parte I — Fundamentos do Modelo de Entradas](#parte-i--fundamentos-do-modelo-de-entradas)
-  - [Objetivo do módulo de entradaDados](#objetivo-do-módulo-de-entradadados)
-  - [Papel arquitetural das entradas](#papel-arquitetural-das-entradas)
-  - [Princípios adotados](#princípios-adotados)
-  - [Responsabilidades e limites do módulo](#responsabilidades-e-limites-do-módulo)
-
-- [Parte II — Conceitos de Entrada de Dados no Projeto](#parte-ii--conceitos-de-entrada-de-dados-no-projeto)
-  - [Tipos de entrada suportados](#tipos-de-entrada-suportados)
-  - [Dados completos e parcialmente desordenados](#dados-completos-e-parcialmente-desordenados)
-  - [Dados gerados automaticamente](#dados-gerados-automaticamente)
-  - [Dados carregados por arquivo](#dados-carregados-por-arquivo)
-
-- [Parte III — Modelo Conceitual das Entradas](#parte-iii--modelo-conceitual-das-entradas)
-  - [Entidade EntradaDados](#entidade-entradadados)
-  - [Entidade ConfiguracaoEntrada](#entidade-configuracaoentrada)
-  - [Entidade DadosEntrada](#entidade-dadosentrada)
-  - [Relacionamentos entre entidades](#relacionamentos-entre-entidades)
-
-- [Parte IV — Classes do Modelo de Entradas](#parte-iv--classes-do-modelo-de-entradas)
-  - [Classe DadosEntrada](#classe-dadosentrada)
-  - [Classe ConfiguracaoEntrada](#classe-configuracaoentrada)
-  - [Classe GeradorDados](#classe-geradordados)
-  - [Classe LeitorArquivoEntrada](#classe-leitorarquivoentrada)
-  - [Classe PreparadorEntrada](#classe-preparadorentrada)
-
-- [Parte V — Contratos do Módulo entradaDados](#parte-v--contratos-do-módulo-entradadados)
-  - [Contrato de geração de dados](#contrato-de-geração-de-dados)
-  - [Contrato de leitura de arquivos](#contrato-de-leitura-de-arquivos)
-  - [Contrato de preparação dos dados](#contrato-de-preparação-dos-dados)
-  - [Contrato de comunicação com aplicacao](#contrato-de-comunicação-com-aplicacao)
-
-- [Parte VI — Validações e Regras de Entrada](#parte-vi--validações-e-regras-de-entrada)
-  - [Validação da quantidade de elementos](#validação-da-quantidade-de-elementos)
-  - [Validação dos dados recebidos](#validação-dos-dados-recebidos)
-  - [Validação dos arquivos](#validação-dos-arquivos)
-  - [Tratamento de erros de entrada](#tratamento-de-erros-de-entrada)
-
-- [Parte VII — Fluxos de Entrada de Dados](#parte-vii--fluxos-de-entrada-de-dados)
-  - [Fluxo de geração automática](#fluxo-de-geração-automática)
-  - [Fluxo de leitura de arquivo](#fluxo-de-leitura-de-arquivo)
-  - [Fluxo de entrada parcial](#fluxo-de-entrada-parcial)
-  - [Matriz de comunicação](#matriz-de-comunicação)
-
-- [Parte VIII — Estruturas de Dados Utilizadas](#parte-viii--estruturas-de-dados-utilizadas)
-  - [Listas de entrada](#listas-de-entrada)
-  - [Metadados da entrada](#metadados-da-entrada)
-  - [Configurações de geração](#configurações-de-geração)
-  - [Representação dos estados](#representação-dos-estados)
-
-- [Parte IX — Diagramas e Arquitetura](#parte-ix--diagramas-e-arquitetura)
-  - [Arquitetura do módulo entradaDados](#arquitetura-do-módulo-entradadados)
-  - [Diagrama de classes](#diagrama-de-classes)
-  - [Diagrama de comunicação](#diagrama-de-comunicação)
-  - [Dependências permitidas e proibidas](#dependências-permitidas-e-proibidas)
-
-- [Parte X — Evolução e Considerações Finais](#parte-x--evolução-e-considerações-finais)
-  - [Estado atual da V1.0](#estado-atual-da-v10)
-  - [Limitações conhecidas](#limitações-conhecidas)
-  - [Roadmap evolutivo](#roadmap-evolutivo)
-  - [Considerações finais](#considerações-finais)
-
----
-
 # Parte I — Fundamentos do Modelo de Entradas
 
-<ul>
 Esta seção apresenta os fundamentos arquiteturais do módulo `entradaDados` do **LAB EDU SORT V1.0**.
-</ul>
 
-<ul>
 O objetivo desta parte é estabelecer a base conceitual para o tratamento das entradas utilizadas pelos algoritmos de ordenação, definindo:
-</ul>
 
-<ul>
-<li>responsabilidade do módulo;</li>
-<li>papel dentro da arquitetura geral;</li>
-<li>princípios de desenvolvimento;</li>
-<li>limites de atuação;</li>
-<li>integração com os demais componentes.</li>
-</ul>
+- responsabilidade do módulo;
+- papel dentro da arquitetura geral;
+- princípios de desenvolvimento;
+- limites de atuação;
+- integração com os demais componentes.
 
-<ul>
 O módulo de entrada representa a primeira etapa do fluxo de execução do sistema, sendo responsável por disponibilizar dados adequados para processamento pelos algoritmos de ordenação.
-</ul>
----
 
 ## Objetivo do Módulo entradaDados
 
-O módulo `entradaDados` tem como objetivo controlar todo o ciclo de preparação dos dados que serão utilizados pelo LAB EDU SORT V1.0.
+O módulo `entradaDados` tem como objetivo controlar todo o ciclo de preparação dos dados que serão utilizados pelo **LAB EDU SORT V1.0**.
 
 Suas responsabilidades incluem:
 
@@ -101,41 +27,15 @@ Suas responsabilidades incluem:
 
 O módulo deve garantir que os algoritmos recebam dados consistentes, independentemente da origem da entrada.
 
----
-
 ## Papel Arquitetural das Entradas
 
-Dentro da arquitetura do LAB EDU SORT V1.0, o módulo `entradaDados` atua como uma camada intermediária entre a interação do usuário e o domínio dos algoritmos.
+Dentro da arquitetura do **LAB EDU SORT V1.0**, o módulo `entradaDados` atua como uma camada intermediária entre a interação do usuário e o domínio dos algoritmos.
 
-Fluxo arquitetural:
+**Fluxo arquitetural:**
 
-Usuário
-
-↓
-
-Aplicacao
-
-↓
-
-entradaDados
-
-↓
-
-algoritmosOrdenacao
-
-↓
-
-estatisticas
-
-↓
-
-relatorios / visualizacoes
-
----
+<img width="75%" height="75%" alt="documento_07_diagrama_fluxo_arquitetural" src="https://github.com/user-attachments/assets/11a7ad19-af34-4eec-ba0d-3800006c576b" />
 
 O módulo possui papel fundamental porque os algoritmos de ordenação não devem conhecer detalhes sobre a origem dos dados.
-
-Exemplo:
 
 O algoritmo não deve saber se os dados vieram de:
 
@@ -146,17 +46,9 @@ O algoritmo não deve saber se os dados vieram de:
 
 Ele deve receber apenas uma estrutura de dados válida para processamento.
 
----
-
 ### Separação entre Origem e Consumo dos Dados
 
-Uma decisão arquitetural importante é separar:
-
-Origem dos dados
-
-de
-
-Consumo dos dados.
+Uma decisão arquitetural importante é separar _Origem dos dados_ de _Consumo dos dados_.
 
 A origem pode variar:
 
